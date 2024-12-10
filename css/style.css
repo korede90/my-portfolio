@@ -1,0 +1,88 @@
+/* In style.css */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/header-bg.jpg') no-repeat center center/cover;
+    padding: 100px 0;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.about, .skills, .projects, .contact {
+    border-bottom: 1px solid #ccc;
+}
+
+.footer {
+    background: #222;
+}
+
+.footer a {
+    color: inherit;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.project-image {
+    height: 200px; /* Consistent height for all images */
+    width: 100%;
+    object-fit: cover; /* Ensures image covers the area without distortion */
+}
+
+.card-body {
+    text-align: center; /* Center-align text within the card */
+}
+
+.btn-view {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-view:hover {
+    background-color: #0056b3;
+    color: #fff;
+    transform: translateY(-3px); /* Slight upward movement on hover */
+}
+
+.social-icons a {
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .row > div {
+        margin-bottom: 30px;
+    }
+
+    .project-image {
+        height: 150px; /* Reduced height for smaller screens */
+    }
+
+    .btn-view {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .social-icons a {
+        font-size: 1.5em; /* Adjust icon size for mobile */
+    }
+}
